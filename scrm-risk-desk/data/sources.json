@@ -1,0 +1,39 @@
+{
+  "recommended_sources": [
+    {
+      "category": "Cyber",
+      "source": "CISA Advisories",
+      "notes": "Official cybersecurity advisories and alerts"
+    },
+    {
+      "category": "Cyber/SCRM",
+      "source": "NIST",
+      "notes": "Cybersecurity, supply chain risk, and framework guidance"
+    },
+    {
+      "category": "Regulations",
+      "source": "OFAC",
+      "notes": "Sanctions and restricted party updates"
+    },
+    {
+      "category": "Regulations",
+      "source": "BIS",
+      "notes": "Export controls and entity list updates"
+    },
+    {
+      "category": "Trade",
+      "source": "USTR",
+      "notes": "Trade policy and tariff updates"
+    },
+    {
+      "category": "Natural Disasters",
+      "source": "NOAA/NHC",
+      "notes": "Hurricane and severe weather monitoring"
+    },
+    {
+      "category": "Global Risk",
+      "source": "Google News RSS Searches",
+      "notes": "Curated searches for supply chain disruption, ports, trade, and critical sectors"
+    }
+  ]
+}
