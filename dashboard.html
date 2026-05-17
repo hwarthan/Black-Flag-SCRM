@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Supply Chain Risk Desk</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark">SCRM</span><span>Supply Chain Risk Desk</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="blog.html">Blog</a>
+        <a href="resources.html">Resources</a>
+        <a href="case-studies.html">Case Studies</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <p class="eyebrow">Daily Risk Dashboard</p>
+      <h1>SCRM Watch Center</h1>
+      <p>Curated public reporting across government regulations, trade, cyber, natural disasters, geopolitics, and human factors.</p>
+      <div class="meta-bar">
+        <span>Last update: <strong id="lastUpdated">Manual starter data</strong></span>
+        <span>Source model: curated public feeds</span>
+      </div>
+    </section>
+
+    <section class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Regulations">Regulations</button>
+      <button class="filter-btn" data-filter="Trade">Trade</button>
+      <button class="filter-btn" data-filter="Cyber">Cyber</button>
+      <button class="filter-btn" data-filter="Natural Disasters">Natural Disasters</button>
+      <button class="filter-btn" data-filter="Geopolitics">Geopolitics</button>
+      <button class="filter-btn" data-filter="Human Factors">Human Factors</button>
+    </section>
+
+    <section class="dashboard-layout">
+      <aside class="side-panel">
+        <h2>Risk Categories</h2>
+        <div class="metric"><span>Regulatory</span><strong>High Watch</strong></div>
+        <div class="metric"><span>Cyber</span><strong>Active</strong></div>
+        <div class="metric"><span>Trade</span><strong>Monitor</strong></div>
+        <div class="metric"><span>Disasters</span><strong>Seasonal</strong></div>
+        <p class="small-note">These are starter labels. You can update them manually or automate them later.</p>
+      </aside>
+
+      <section class="feed" id="riskFeed">
+        <article class="feed-card" data-category="Regulations">
+          <div class="feed-top"><span class="tag">Regulations</span><span class="date">Starter</span></div>
+          <h3>Track sanctions, export controls, and supply chain compliance alerts</h3>
+          <p>Use this category for OFAC, BIS, USTR, forced labor enforcement, defense acquisition rules, and emerging compliance requirements.</p>
+          <a href="resources.html">View source list</a>
+        </article>
+
+        <article class="feed-card" data-category="Cyber">
+          <div class="feed-top"><span class="tag">Cyber</span><span class="date">Starter</span></div>
+          <h3>Monitor software vendors and cybersecurity advisories</h3>
+          <p>Use this section for CISA alerts, ransomware trends, software supply chain incidents, and third-party vendor exposure.</p>
+          <a href="resources.html">View source list</a>
+        </article>
+
+        <article class="feed-card" data-category="Trade">
+          <div class="feed-top"><span class="tag">Trade</span><span class="date">Starter</span></div>
+          <h3>Watch shipping lanes, tariffs, ports, and customs changes</h3>
+          <p>Use this category for Red Sea disruptions, Panama Canal constraints, tariffs, port labor issues, and trade policy shifts.</p>
+          <a href="resources.html">View source list</a>
+        </article>
+
+        <article class="feed-card" data-category="Natural Disasters">
+          <div class="feed-top"><span class="tag">Natural Disasters</span><span class="date">Starter</span></div>
+          <h3>Track weather and disaster events that affect logistics</h3>
+          <p>Use this for hurricanes, floods, earthquakes, wildfires, and other events that disrupt production, transportation, or warehousing.</p>
+          <a href="resources.html">View source list</a>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Supply Chain Risk Desk © <span id="year"></span></p>
+  </footer>
+</body>
+</html>
